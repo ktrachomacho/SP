@@ -6,26 +6,61 @@
   <title>Soluciones Pragmáticas - Plantillas Gratis para Emprendedores</title>
   <meta name="description" content="Descarga plantillas GRATIS de Excel para controlar ventas, inventario y costos. Ayudamos a microempresarios a organizar su negocio." />
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f8f9fa;
       color: #333;
       line-height: 1.6;
-      margin: 0;
-      padding: 0;
     }
+
     header {
-      background: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
+      background: #e9c46a;
+      color: #2c3e50;
+      border-bottom: 3px solid #2c3e50;
+      padding: 1.5rem 1rem;
     }
-    h1 { font-size: 2.2rem; }
+
+    .header-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .logo {
+      flex: 0 0 auto;
+    }
+
+    .logo img {
+      max-width: 120px;
+      height: auto;
+    }
+
+    .header-text {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem 1rem;
     }
+
     .card {
       background: white;
       border-radius: 10px;
@@ -33,6 +68,7 @@
       padding: 1.5rem;
       margin-bottom: 1.5rem;
     }
+
     .btn {
       display: inline-block;
       background: #27ae60;
@@ -44,10 +80,11 @@
       font-weight: bold;
       text-align: center;
     }
+
     .btn-whatsapp {
       background: #25D366;
-      color: white;
     }
+
     footer {
       text-align: center;
       padding: 1.5rem;
@@ -55,25 +92,40 @@
       color: white;
       font-size: 0.9rem;
     }
+
     @media (max-width: 600px) {
-      h1 { font-size: 1.8rem; }
+      .header-text h1 {
+        font-size: 1.6rem;
+      }
+      .header-text p {
+        font-size: 0.95rem;
+      }
+      .header-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      .logo {
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<header style="background: #e9c46a; color: #2c3e50; padding: 1.5rem 1rem; border-bottom: 3px solid #2c3e50;">
-  <div style="display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
-    <img src="https://raw.githubusercontent.com/ktrachomacho/SP/main/img/Logo_SP.png" 
-         alt="Logo Soluciones Pragmáticas" 
-         style="max-width: 120px; height: auto;">
-    <div style="text-align: center;">
-      <h1 style="margin: 0; font-size: 2.2rem; color: #2c3e50;">Soluciones Pragmáticas</h1>
-      <p style="margin: 0.5rem 0 0; color: #2c3e50;">Plantillas GRATIS para emprendedores que quieren ordenar su negocio</p>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="https://raw.githubusercontent.com/ktrachomacho/SP/main/img/Logo_SP.png" alt="Logo Soluciones Pragmáticas">
+      </div>
+      <div class="header-text">
+        <h1>Soluciones Pragmáticas</h1>
+        <p>Plantillas GRATIS para emprendedores que quieren ordenar su negocio</p>
+      </div>
     </div>
-  </div>
-</header>
-    
+  </header>  
+
+  <div class="container">
+
     <div class="card">
       <h2>¿Tu negocio vende… pero no sabes si ganas?</h2>
       <p>Muchos microempresarios trabajan duro, pero no controlan sus costos, inventarios ni ventas. Por eso, ofrecemos <strong>herramientas GRATIS</strong> para que comiences a ver con claridad tu negocio.</p>
@@ -86,35 +138,19 @@
         <li>
           <strong>1. Control de Ventas</strong><br>
           <small>Organiza tus ventas diarias y controla tus gastos.</small><br>
-          <a href="https://github.com/ktrachomacho/SP/blob/main/ventas/Control_Venta%20v1.0.xlsx" class="btn"><i class="fas fa-download"></i> Descargar (Excel)</a>
+          <a href="https://github.com/ktrachomacho/SP/blob/main/ventas/Control_Venta%20v1.0.xlsx" class="btn">📥 Descargar (Excel)</a>
         </li>
         <li>
           <strong>2. Control de Inventario</strong><br>
           <small>Gestiona tus productos y mantén el control de stock.</small><br>
-          <a href="https://github.com/ktrachomacho/SP/blob/main/inventarios/Control_Inventario%20v1.0.xlsx" class="btn"><i class="fas fa-download"></i> Descargar (Excel)</a>
+          <a href="https://github.com/ktrachomacho/SP/blob/main/inventarios/Control_Inventario%20v1.0.xlsx" class="btn">📥 Descargar (Excel)</a>
         </li>
         <li>
           <strong>3. Control de Costos</strong><br>
           <small>Determina precios justos y rentables para tus productos.</small><br>
-          <a href="https://github.com/ktrachomacho/SP/raw/refs/heads/main/Costos/Control_Costos%20v1.0.xlsx" class="btn"><i class="fas fa-download"></i> Descargar (Excel)</a>
+          <a href="https://github.com/ktrachomacho/SP/raw/refs/heads/main/Costos/Control_Costos%20v1.0.xlsx" class="btn">📥 Descargar (Excel)</a>
         </li>
-      </ul>
-      <p><em>¿Necesitas ayuda para usarlas? Escríbenos por WhatsApp.</em></p>
-      <a href="https://wa.me/50432324682?text=Hola,%20vi%20las%20plantillas%20de%20Soluciones%20Pragmáticas" class="btn btn-whatsapp">💬 Habla con nosotros por WhatsApp</a>
-    </div>
-
-    <div class="card">
-      <h3>¿Quieres que te ayudemos a organizar tu negocio?</h3>
-      <p>Adaptamos estas hojas a tu negocio real, te capacitamos y te apoyamos mensualmente por una <strong>cuota accesible</strong>.</p>
-      <p>Ideal para pulperías, panaderías, talleres, delivery y más.</p>
-      <a href="https://wa.me/50432324682?text=Hola,%20quisiera%20más%20información%20sobre%20sus%20servicios" class="btn">📅 Agenda una asesoría gratis</a>
-    </div>
-
-  </div>
-
-  <footer>
-    &copy; 2025 Soluciones Pragmáticas | Hecho en Honduras para emprendedores reales
-  </footer>
+      <
 
 </body>
 </html>
